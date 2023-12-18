@@ -1,0 +1,143 @@
+\doxysection{Класс Book}
+\hypertarget{class_book}{}\label{class_book}\index{Book@{Book}}
+
+
+Класс описания книг  
+
+
+
+
+{\ttfamily \#include $<$Book.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_book_af0c53d1005387ce778a33f73a740b893}{Book}} (std\+::string author, std\+::string title, std\+::string publisher, int year, int page\+Count)
+\begin{DoxyCompactList}\small\item\em Конструктор для класса \doxylink{class_book}{Book}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_ab9e954333746634da1a1768f84b6652e}{show\+Books\+By\+Author}} (std\+::string author\+Name)
+\begin{DoxyCompactList}\small\item\em Книги заданного автора;. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_ac33e1154feb25ab906d19167758e599c}{show\+Books\+By\+Publisher}} (std\+::string publisher\+Name)
+\begin{DoxyCompactList}\small\item\em Список книг заданного издательства;. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_a453b484148f2671c8b78517b6a574ff6}{show\+Books\+After\+Year}} (int target\+Year)
+\begin{DoxyCompactList}\small\item\em Книги выпущенные после заданного года;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс описания книг 
+
+\begin{DoxyVerb}@file Book.h
+@brief Заголовочный файл класса книги
+@copyright ВоГУ
+@author Гарманов А.С
+@date 10.12.2023
+@version 1.0.0
+\end{DoxyVerb}
+ \begin{DoxyParagraph}{Использует классы}
+\doxylink{class_book}{Book} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Содержит класс}
+\doxylink{class_book}{Book} 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_book_af0c53d1005387ce778a33f73a740b893}\label{class_book_af0c53d1005387ce778a33f73a740b893} 
+\index{Book@{Book}!Book@{Book}}
+\index{Book@{Book}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Book()}{Book()}}
+{\footnotesize\ttfamily Book\+::\+Book (\begin{DoxyParamCaption}\item[{std\+::string}]{author,  }\item[{std\+::string}]{title,  }\item[{std\+::string}]{publisher,  }\item[{int}]{year,  }\item[{int}]{page\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор для класса \doxylink{class_book}{Book}. 
+
+принимает параметры для автора, названия, издателя, года и количества страниц и инициализирует соответствующие атрибуты объекта \doxylink{class_book}{Book}. 
+\begin{DoxyParams}{Аргументы}
+{\em author} & Имя автора \\
+\hline
+{\em title} & Название книги \\
+\hline
+{\em publisher} & Издательство книги \\
+\hline
+{\em year} & Год выпуска книги \\
+\hline
+{\em page\+Count} & Количество страниц книги \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_book_a453b484148f2671c8b78517b6a574ff6}\label{class_book_a453b484148f2671c8b78517b6a574ff6} 
+\index{Book@{Book}!showBooksAfterYear@{showBooksAfterYear}}
+\index{showBooksAfterYear@{showBooksAfterYear}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{showBooksAfterYear()}{showBooksAfterYear()}}
+{\footnotesize\ttfamily void Book\+::show\+Books\+After\+Year (\begin{DoxyParamCaption}\item[{int}]{target\+Year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Книги выпущенные после заданного года;. 
+
+Данная функция выводит список книг, выпущенных после заданного года 
+\begin{DoxyParams}{Аргументы}
+{\em target\+Year} & Год издания \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+title Название книги выпущенной после этого года 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Is\+Empty} & Книг выпущенных после этого года нет \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_book_ab9e954333746634da1a1768f84b6652e}\label{class_book_ab9e954333746634da1a1768f84b6652e} 
+\index{Book@{Book}!showBooksByAuthor@{showBooksByAuthor}}
+\index{showBooksByAuthor@{showBooksByAuthor}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{showBooksByAuthor()}{showBooksByAuthor()}}
+{\footnotesize\ttfamily void Book\+::show\+Books\+By\+Author (\begin{DoxyParamCaption}\item[{std\+::string}]{author\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Книги заданного автора;. 
+
+Данная функция принимает имя автора и выводит название книги этого автора 
+\begin{DoxyParams}{Аргументы}
+{\em author\+Name} & Имя автора \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+title Название книги данного автора 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Is\+Empty} & У этого автора нет книг \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_book_ac33e1154feb25ab906d19167758e599c}\label{class_book_ac33e1154feb25ab906d19167758e599c} 
+\index{Book@{Book}!showBooksByPublisher@{showBooksByPublisher}}
+\index{showBooksByPublisher@{showBooksByPublisher}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{showBooksByPublisher()}{showBooksByPublisher()}}
+{\footnotesize\ttfamily void Book\+::show\+Books\+By\+Publisher (\begin{DoxyParamCaption}\item[{std\+::string}]{publisher\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Список книг заданного издательства;. 
+
+Данная функция выводит список книг, выпущенных заданным издательством 
+\begin{DoxyParams}{Аргументы}
+{\em publisher\+Name} & Название издательства \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+title Название книги данного издаьтельства 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Is\+Empty} & У этого издательства нет книг \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Garmanov\+\_\+person/\+Garmanov\+\_\+person/Book.\+h\end{DoxyCompactItemize}
